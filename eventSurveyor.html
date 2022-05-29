@@ -11,6 +11,11 @@
 	<script src="https://kit.fontawesome.com/91fb37ada3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	<div class="Lizard">
+		<button class="Button Button-xl bg-main-linear">
+			+ Tambah Surveyor
+		</button>
+	</div>
 	<div class="sidebar-container">
 		<div class="sidebar-mar">
 			<div class="logo">
@@ -18,12 +23,19 @@
 			</div>
 		</div>
 		<div class="sidebar-navigation Mt-2">
-			<div class="navigation-link active">
-				<div class="icon-mid">
-					<img src="./home-blue.png" width="100%" height="100%">
-				</div>
+			<div class="navigation-link">
 				<span>
-					<a href="surveyor.html">Event</a>
+					<a href="eventHome.html">Home</a>
+				</span>
+			</div>
+			<div class="navigation-link">
+				<span>
+					<a href="eventTable.html">Event</a>
+				</span>
+			</div>
+			<div class="navigation-link active">
+				<span>
+					<a href="eventSurveyor.html">Surveyor</a>
 				</span>
 			</div>
 		</div>
@@ -40,11 +52,16 @@
 		<ul class="breadcrumbs">
 			<li>Homepage</li>
 			<li>/</li>
-			<li class="active">Event</li>
+			<li>Daftar Surveyor</li>
 		</ul>
+
 		<div class="Card">
-			<h3>Arsip</h3>
-			<h4 class="C-black-3 mt-1">Daftar data lahan petani</h4>
+			<div class="row">
+				<div class="col-lg-6">
+					<h3>Surveyor</h3>
+					<h4 class="C-black-3 mt-1">Daftar surveyor yang ditambahkan pada event ini</h4>
+				</div>
+			</div>
 			<div class="row mt-1">
 				<div class="col-lg-4 mt-2">
 					<input type="" name="" class="FormControl" placeholder="Cari data">
@@ -59,27 +76,30 @@
 				<table class="Table">
 					<thead>
 						<tr>
-							<th>Nama Petani</th>
-							<th>Nama Poktan</th>
-							<th>Estimasi Lahan</th>
-							<th>Pengakuan</th>
-							<th>Status Kelola</th>
-							<th></th>
+							<th>Nama Surveyor</th>
+							<th>Email</th>
+							<th>Telepon</th>
+							<th>Event</th>
+							<th>Total Assignment</th>
+							<th>Grade</th>
+							<th>Status</th>
+							<th>Action</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>Revan Muhammad Dafa</td>
-							<td>Petani Jaya</td>
-							<td>100 Meter</td>
-							<td>200 Meter</td>
-							<td>Pengelola</td>
+							<td>Revan Muhammad</td>
+							<td>Bogor</td>
+							<td>0895412354</td>
+							<td>Kunjungan Bogor, Kunjungan Bali</td>
+							<td>110</td>
+							<td>Gold</td>
+							<td>
+								<span class="Badge-s bg-main">Dalam masa survei</span>
+							</td>
 							<td>
 								<button class="Button Button-s bg-sub">
 									Edit
-								</button>
-								<button class="Button Button-s bg-delete">
-									Hapus
 								</button>
 							</td>
 						</tr>
@@ -87,6 +107,7 @@
 				</table>
 			</div>
 		</div>
+
 	</div>
 </body>
 </html>

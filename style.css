@@ -52,6 +52,25 @@ a{
 a:hover{
 	color: inherit;
 }
+label{
+	font-size: 13px;
+}
+.progress{
+	margin-top: 7px;
+	height: 10px;
+	width: 100%;
+	color: white;
+	border-radius: 20px
+}
+.progress::-webkit-progress-value { 
+	 -webkit-appearance: none;
+	background: #2D338E;
+}
+.progress::-webkit-progress-bar { 
+	 -webkit-appearance: none;
+	background: #D9D9D9;
+}
+
 .Mt-5{
 	margin-top: 5em;
 }
@@ -71,6 +90,10 @@ a:hover{
 	background-color: #2D338E !important;
 	color: white !important;
 }
+.bg-main-linear{
+	background:linear-gradient(100.95deg, #5961CA 18.1%, #2D338E 82.42%);
+	color: white;
+}
 .bg-invert{
 	background-color: #FFFFFF !important;
 	color: #2D338E !important;
@@ -82,6 +105,24 @@ a:hover{
 .bg-delete{
 	background-color: rgba(255, 0, 0, 0.1);
 	color:#BE3533;
+}
+.bg-orange{
+	background-color: #EF7E1B;
+}
+.bg-green{
+	background-color: #219653;
+}
+.bg-yellow{
+	background-color: #F4CF0D;
+}
+.bg-red{
+	background-color: #BE3533;
+}
+.bg-lumut{
+	background-color: #57BE33;
+}
+.bg-blue{
+	background-color: #249EF6;
 }
 .C-main{
 	color:#2D338E !important;
@@ -153,12 +194,17 @@ a:hover{
 .Button-block{
 	width: 100%;
 }
+.Button-xl{
+	width: 300px;
+	font-size: 16px;
+	padding: 10px;
+}
 .Button-l{
 	padding: 10px;
 }
 .Button-sm{
-	padding: 4px 8px;
-	width: 66px;
+	padding: 5px 0px;
+	width: 100px;
 }
 .Button-s{
 	font-size: 10px;
@@ -267,7 +313,10 @@ ul.breadcrumbs li.active{
 	font-size: 14px;
 	width: 100%;
 	background-color:white;
-	color: #828282;
+	color: black;
+}
+.FormControl::placeholder{
+	color:#BDBDBD
 }
 .ml-auto{
 	margin-left: auto !important;
@@ -282,6 +331,30 @@ ul.breadcrumbs li.active{
 	background: url('./bg.png');
 	background-size: 100% 100%;
 	background-position: 100% 100%;
+}
+
+.Badge-l{
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-size: 12px;
+	color:white;
+}
+.Badge-s{
+	padding: 2px 5px;
+	font-size: 10px;
+	color:white;
+	margin-left: 2px;
+	margin-right: 2px;
+	border-radius: 7px;
+}
+
+.text-right{
+	text-align: right;
+}
+.Lizard{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
 }
 @media only screen and (max-width: 800px) {
 	.sidebar-container{
@@ -337,5 +410,11 @@ ul.breadcrumbs li.active{
 	}
 	ul.breadcrumbs{
 		font-size: 12px;	
+	}
+	.Button-xl{
+		width: 100%;
+	}
+	.Lizard{
+		width: 85%
 	}
 }
