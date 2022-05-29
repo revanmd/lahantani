@@ -1,6 +1,12 @@
+html{
+	margin: 0;
+	padding: 0;
+}
 body{
 	font-family: 'Noto Sans' !important;
 	background-color: #FBFAFF;
+	margin: 0;
+	padding: 0;
 }
 h1,h2,h3,h4,h5,h6{
 	padding: 0;
@@ -219,6 +225,10 @@ label{
 	height: 18px;
 	width: 20px
 }
+.icon-logo{
+	height: 50px;
+	width:150px;
+}
 .icon-badge{
 	height: 44px;
 	width: 44px;
@@ -356,6 +366,18 @@ ul.breadcrumbs li.active{
 	bottom: 20px;
 	right: 20px;
 }
+.login-container{
+	width: 100vw;
+	height: 100vh;
+	background: url('./bg.png');
+	background-size: 100% 100%;
+	background-position: 100% 100%;
+	padding:3em;
+}
+.login-form{
+	padding-top: 8%;
+	max-width: 350px; 
+}
 @media only screen and (max-width: 800px) {
 	.sidebar-container{
 		display: none;
@@ -416,5 +438,15 @@ ul.breadcrumbs li.active{
 	}
 	.Lizard{
 		width: 85%
+	}
+	.icon-logo{
+		width: 80px;
+		height: 35px;
+	}
+	.login-form{
+		margin-top: 22%;
+	}
+	.login-container{
+		padding: 2em;
 	}
 }
